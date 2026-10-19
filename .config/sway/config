@@ -1,19 +1,19 @@
 ### OUTPUTS ###
-output eDP-1 mode 1920x1080@60HZ pos 0 0 scale 1.25
+output eDP-1 mode 1920x1080@60HZ pos 0 0 scale 1
 output DP-2 mode 2560x1080@90HZ pos 0 1080 scale 1
-output "*" bg #191724 solid_color
+output "*" bg ~/.config/sway/wallpaper fill
 
 ### VARIABLES ####
 set $term ghostty
 set $menu fuzzel
-set $browser ~/apps/zen
+set $browser chromium
 set $notifier mako
 
 set $laptop eDP-1
 set $monitor DP-2
 
 ### AUTOSTART ###
-exec autotiling
+exec autotiling & mako
 
 ### INPUTS ###
 input type:keyboard {
@@ -26,6 +26,10 @@ gaps inner 5
 gaps outer 3
 default_border pixel 2
 client.focused #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
+
+### CLAMSHELL MODE ###
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
 
 ### KEYBINDINGS ###
 set $mod Mod4
@@ -99,9 +103,9 @@ bar {
     status_command while ~/.config/sway/status.sh; do sleep 1; done
 
     colors {
-        statusline #c4a7e7
+        statusline #ebbcba
         background #191724
-        focused_workspace #191724 #191724 #c4a7e7
+        focused_workspace #191724 #191724 #ebbcba
         inactive_workspace #191724 #191724 #6e6a86
     }
 }

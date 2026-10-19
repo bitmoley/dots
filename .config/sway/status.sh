@@ -7,6 +7,6 @@ while true; do
     }')
     capacity=$(cat /sys/class/power_supply/BAT1/capacity)
     datetime=$(date +'%H:%M')
-    echo "vol $vol  bat ${capacity}%  $datetime  "
+    echo "VOL: $vol  BAT: ${capacity}%  $datetime "
     sleep 1
 done

@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd("PackChanged", {
 
 vim.pack.add({
   -- colourscheme + statusline
-  { src = "https://github.com/rose-pine/neovim",                name = "rose-pine" },
+  "https://github.com/ellisonleao/gruvbox.nvim",
   "https://github.com/nvim-lualine/lualine.nvim",
   "https://github.com/nvim-tree/nvim-web-devicons",
 
@@ -39,7 +39,7 @@ require("lualine").setup()
 
 require("mini.pick").setup()
 
-require("rose-pine").setup({
+require("gruvbox").setup({
   styles = {
     transparency = true, -- Enables a transparent background
   },

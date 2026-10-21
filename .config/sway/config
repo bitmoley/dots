@@ -1,10 +1,10 @@
 ### OUTPUTS ###
 output eDP-1 mode 1920x1080@60HZ pos 0 0 scale 1
 output DP-2 mode 2560x1080@90HZ pos 0 1080 scale 1
-output "*" bg ~/.config/sway/wallpaper fill
+output "*" bg #3c3836 solid_color
 
 ### VARIABLES ####
-set $term ghostty
+set $term ghostty -e tmux
 set $menu fuzzel
 set $browser chromium
 set $notifier mako
@@ -25,7 +25,7 @@ input type:keyboard {
 gaps inner 5
 gaps outer 3
 default_border pixel 2
-client.focused #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
+client.focused #ebdbb2 #ebdbb2 #ebdbb2 #ebdbb2 #ebdbb2
 
 ### CLAMSHELL MODE ###
 bindswitch lid:on output $laptop disable
@@ -97,16 +97,16 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 bar {
-    position top
+    position bottom
     font JetBrains Mono Bold Medium 10
 
     status_command while ~/.config/sway/status.sh; do sleep 1; done
 
     colors {
-        statusline #ebbcba
-        background #191724
-        focused_workspace #191724 #191724 #ebbcba
-        inactive_workspace #191724 #191724 #6e6a86
+        statusline #d79921
+        background #282828
+        focused_workspace #282828 #282828 #d79921
+        inactive_workspace #282828 #282828 #504945
     }
 }
 

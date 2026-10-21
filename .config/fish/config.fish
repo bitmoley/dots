@@ -17,9 +17,6 @@ alias v="nvim"
 # eza
 alias ls="eza -l"
 
-#distrobox
-alias db="distrobox"
-
 ### PATH VARIABLES ###
 fish_add_path ~/go/bin
 fish_add_path ~/apps

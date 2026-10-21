@@ -1,6 +1,5 @@
-theme = Rose Pine
+theme = Gruvbox Dark
 font-family = JetBrainsMono NF Medium
-background-opacity = 0.95
 background-blur = true
 font-size = 14
 window-decoration = none

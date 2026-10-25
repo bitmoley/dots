@@ -39,6 +39,10 @@
       "rev": "58447c1fca354bbf184425e4a8d01deecbd6f3c4",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "onehalf": {
+      "rev": "cb25877a6aada5ef98681950b85bd9f9f7f29a59",
+      "src": "https://github.com/clearaspect/onehalf"
+    },
     "rose-pine": {
       "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
       "src": "https://github.com/rose-pine/neovim"

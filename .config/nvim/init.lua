@@ -27,4 +27,4 @@ vim.lsp.config('ruff', {
 vim.lsp.log.set_level("ERROR")
 
 -- colourshceme
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("onehalfdark")

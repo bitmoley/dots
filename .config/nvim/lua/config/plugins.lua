@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd("PackChanged", {
 
 vim.pack.add({
   -- colourscheme + statusline
-  "https://github.com/ellisonleao/gruvbox.nvim",
+  "https://github.com/clearaspect/onehalf",
   "https://github.com/nvim-lualine/lualine.nvim",
   "https://github.com/nvim-tree/nvim-web-devicons",
 
@@ -38,12 +38,6 @@ require("nvim-autopairs").setup()
 require("lualine").setup()
 
 require("mini.pick").setup()
-
-require("gruvbox").setup({
-  styles = {
-    transparency = true, -- Enables a transparent background
-  },
-})
 
 ---@module 'blink.cmp'
 ---@type blink.cmp.Config

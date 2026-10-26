@@ -1,0 +1,98 @@
+/* Waybar — One Half Dark */
+
+@define-color bg      #282c34;
+@define-color bg-alt  #313640;
+@define-color fg      #dcdfe4;
+@define-color grey    #5c6370;
+@define-color red     #e06c75;
+@define-color green   #98c379;
+@define-color yellow  #e5c07b;
+@define-color blue    #61afef;
+@define-color magenta #c678dd;
+@define-color cyan    #56b6c2;
+
+* {
+    font-family: JetBrains Mono;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg;
+    color: @fg;
+}
+
+/* Workspaces */
+
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: @grey;
+    box-shadow: none;
+}
+
+#workspaces button:hover {
+    background: @bg-alt;
+    color: @fg;
+    box-shadow: none;
+}
+
+#workspaces button.focused {
+    background: @bg-alt;
+    color: @blue;
+    box-shadow: inset 0 -2px @blue;
+}
+
+#workspaces button.urgent {
+    color: @bg;
+    background: @red;
+}
+
+/* Right-hand modules */
+
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#backlight,
+#battery,
+#clock {
+    padding: 0 8px;
+}
+
+#pulseaudio { color: @magenta; }
+#network    { color: @cyan; }
+#cpu        { color: @green; }
+#memory     { color: @yellow; }
+#backlight  { color: @yellow; }
+#battery    { color: @green; }
+#clock      { color: @blue; }
+
+#pulseaudio.muted,
+#network.disconnected {
+    color: @grey;
+}
+
+#battery.charging {
+    color: @cyan;
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+tooltip {
+    background: @bg;
+    border: 1px solid @grey;
+}
+
+tooltip label {
+    color: @fg;
+}

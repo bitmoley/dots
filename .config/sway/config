@@ -6,7 +6,7 @@ output "*" bg ~/.config/sway/wallpaper.png fill
 ### VARIABLES ####
 set $term ghostty -e tmux
 set $menu fuzzel
-set $browser chromium
+set $browser zen-browser
 set $notifier mako
 
 set $laptop eDP-1
@@ -97,17 +97,7 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 bar {
-    position bottom
-    font JetBrains Mono Bold Medium 10
-
-    status_command while ~/.config/sway/status.sh; do sleep 1; done
-
-    colors {
-        statusline #dcdfe4
-        background #282828
-        focused_workspace #282828 #282828 #dcdfe4
-        inactive_workspace #282828 #282828 #504945
-    }
+    swaybar_command waybar
 }
 
 include /etc/sway/config.d/*

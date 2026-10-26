@@ -1,7 +1,7 @@
 ### OUTPUTS ###
 output eDP-1 mode 1920x1080@60HZ pos 0 0 scale 1.25
 output DP-2 mode 2560x1080@90HZ pos 0 1080 scale 1
-output "*" bg #3c3836 solid_color
+output "*" bg ~/.config/sway/wallpaper.png fill
 
 ### VARIABLES ####
 set $term ghostty -e tmux
@@ -22,8 +22,8 @@ input type:keyboard {
 }
 
 ### APPEARANCE ###
-gaps inner 0
-gaps outer 0
+gaps inner 5
+gaps outer 3
 default_border pixel 2
 client.focused #dcdfe4 #dcdfe4 #dcdfe4 #dcdfe4 #dcdfe4
 
@@ -96,19 +96,19 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
-#bar {
-#    position bottom
-#    font JetBrains Mono Bold Medium 10
-#
-#    status_command while ~/.config/sway/status.sh; do sleep 1; done
-#
-#    colors {
-#        statusline #d79921
-#        background #282828
-#        focused_workspace #282828 #282828 #d79921
-#        inactive_workspace #282828 #282828 #504945
-#    }
-#}
+bar {
+    position bottom
+    font JetBrains Mono Bold Medium 10
+
+    status_command while ~/.config/sway/status.sh; do sleep 1; done
+
+    colors {
+        statusline #d79921
+        background #282828
+        focused_workspace #282828 #282828 #d79921
+        inactive_workspace #282828 #282828 #504945
+    }
+}
 
 include /etc/sway/config.d/*
 include /etc/sway/config-vars.d/*

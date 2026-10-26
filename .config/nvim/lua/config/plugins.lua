@@ -12,55 +12,17 @@ vim.api.nvim_create_autocmd("PackChanged", {
 })
 
 vim.pack.add({
-  -- colourscheme + statusline
-  "https://github.com/clearaspect/onehalf",
-  "https://github.com/nvim-lualine/lualine.nvim",
-  "https://github.com/nvim-tree/nvim-web-devicons",
-
-  -- editing
-  "https://github.com/windwp/nvim-autopairs",
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
-
-  -- completion
-  { src = "https://github.com/saghen/blink.cmp",                version = vim.version.range("1.*") },
-  "https://github.com/rafamadriz/friendly-snippets",
-
-  -- lsp configs
-  "https://github.com/neovim/nvim-lspconfig",
-
-  -- picker
-  { src = "https://github.com/nvim-mini/mini.nvim", version = vim.version.range("*") },
+  "https://github.com/clearaspect/onehalf", -- colourscheme
+  "https://github.com/nvim-mini/mini.nvim", -- mini.nvim
+  "https://github.com/nvim-treesitter/nvim-treesitter", -- treesitter
+  "https://github.com/neovim/nvim-lspconfig", -- nvim lspconfig
 })
 
 -- plugin setup
-require("nvim-autopairs").setup()
-
-require("lualine").setup()
-
 require("mini.pick").setup()
-
----@module 'blink.cmp'
----@type blink.cmp.Config
-require("blink.cmp").setup({
-  keymap = { preset = "default" },
-  appearance = {
-    nerd_font_variant = "mono",
-  },
-  completion = {
-    menu = {
-      border = "rounded",
-      winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
-    },
-    documentation = {
-      auto_show = true,
-      window = {
-        border = "rounded",
-        winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
-      },
-    },
-  },
-  sources = {
-    default = { "lsp", "path", "snippets", "buffer" },
-  },
-  fuzzy = { implementation = "prefer_rust_with_warning" },
-})
+require("mini.statusline").setup()
+require("mini.icons").setup()
+require("mini.completion").setup()
+require("mini.snippets").setup()
+require("mini.pairs").setup()
+require("mini.files").setup()

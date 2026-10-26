@@ -1,8 +1,6 @@
 --- KEYMAPS ---
 -- open netrw
-vim.keymap.set("n", "<leader>e", "<CMD>Ex<CR>")
-vim.keymap.set("n", "<leader>ev", "<CMD>Vex<CR>")
-vim.keymap.set("n", "<leader>eh", "<CMD>Sex<CR>")
+vim.keymap.set("n", "<leader>e", "<CMD>lua MiniFiles.open()<CR>")
 
 -- navigate splits with ctrl+hjkl
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>")

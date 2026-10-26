@@ -1,5 +1,5 @@
 ### OUTPUTS ###
-output eDP-1 mode 1920x1080@60HZ pos 0 0 scale 1.25
+output eDP-1 mode 1920x1200@165HZ pos 0 0 scale 1.25
 output DP-2 mode 2560x1080@90HZ pos 0 1080 scale 1
 output "*" bg ~/.config/sway/wallpaper.png fill
 
@@ -103,9 +103,9 @@ bar {
     status_command while ~/.config/sway/status.sh; do sleep 1; done
 
     colors {
-        statusline #d79921
+        statusline #dcdfe4
         background #282828
-        focused_workspace #282828 #282828 #d79921
+        focused_workspace #282828 #282828 #dcdfe4
         inactive_workspace #282828 #282828 #504945
     }
 }

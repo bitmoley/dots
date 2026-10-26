@@ -27,4 +27,4 @@ vim.lsp.config('ruff', {
 vim.lsp.log.set_level("ERROR")
 
 -- colourshceme
-vim.cmd.colorscheme("onehalfdark")
+vim.cmd.colorscheme("kanagawa-wave")

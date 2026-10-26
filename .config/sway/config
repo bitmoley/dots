@@ -25,7 +25,7 @@ input type:keyboard {
 gaps inner 5
 gaps outer 3
 default_border pixel 2
-client.focused #dcdfe4 #dcdfe4 #dcdfe4 #dcdfe4 #dcdfe4
+client.focused #7e9cd8 #7e9cd8 #7e9cd8 #7e9cd8 #7e9cd8
 
 ### CLAMSHELL MODE ###
 bindswitch lid:on output $laptop disable

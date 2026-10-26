@@ -1,15 +1,15 @@
-/* Waybar — One Half Dark */
+/* Waybar — Kanagawa Wave */
 
-@define-color bg      #282c34;
-@define-color bg-alt  #313640;
-@define-color fg      #dcdfe4;
-@define-color grey    #5c6370;
-@define-color red     #e06c75;
-@define-color green   #98c379;
-@define-color yellow  #e5c07b;
-@define-color blue    #61afef;
-@define-color magenta #c678dd;
-@define-color cyan    #56b6c2;
+@define-color bg      #1f1f28; /* sumiInk1    */
+@define-color bg-alt  #2a2a37; /* sumiInk2    */
+@define-color fg      #dcd7ba; /* fujiWhite   */
+@define-color grey    #727169; /* fujiGray    */
+@define-color red     #e46876; /* waveRed     */
+@define-color green   #98bb6c; /* springGreen */
+@define-color yellow  #e6c384; /* carpYellow  */
+@define-color blue    #7e9cd8; /* crystalBlue */
+@define-color magenta #957fb8; /* oniViolet   */
+@define-color cyan    #7aa89f; /* waveAqua2   */
 
 * {
     font-family: JetBrains Mono;

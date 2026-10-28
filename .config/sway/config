@@ -1,10 +1,10 @@
 ### OUTPUTS ###
 output eDP-1 mode 1920x1200@165HZ pos 0 0 scale 1.25
-output DP-2 mode 2560x1080@90HZ pos 0 1080 scale 1
+output DP-9 mode 1920x1080@60HZ pos 0 1080 scale 1
 output "*" bg ~/.config/sway/wallpaper.jpg fill
 
 ### VARIABLES ####
-set $term ghostty -e tmux
+set $term ghostty
 set $menu fuzzel
 set $browser zen-browser
 set $notifier mako

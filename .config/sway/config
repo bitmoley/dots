@@ -6,7 +6,7 @@ output "*" bg ~/.config/sway/wallpaper.jpg fill
 ### VARIABLES ####
 set $term ghostty
 set $menu fuzzel
-set $browser zen-browser
+set $browser flatpak run app.zen_browser.zen
 set $notifier mako
 
 set $laptop eDP-1
